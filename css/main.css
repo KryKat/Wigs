@@ -1,6 +1,10 @@
 .wrapper {
   height: 100%;
   display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  background: rgba(255, 255, 255, 0.80);
   grid-template-areas:
     "aside header"
     "aside main";
@@ -50,6 +54,23 @@
 .aside .inspiration::before {
   background-image: url("/img/diamond.svg");
 }
+.aside li {
+  position: relative;
+}
+.aside li::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  display: block;
+  width: 0%;
+  opacity: 50%;
+  height: 1px;
+  background: #000;
+  transition: 0.2s ease-in-out;
+}
+.aside li:hover::after {
+  width: 75%;
+}
 .aside nav a {
   font-family: "Montserrat";
   font-weight: 500;
@@ -69,6 +90,7 @@
 
 .header {
   grid-area: header;
+  max-width: 1188px;
   display: flex;
   justify-content: flex-end;
 }
@@ -89,13 +111,31 @@
   margin-left: 11px;
 }
 .user {
-  margin-left: 25px;
+  margin: 0px 50px;
+}
+.header li {
+  position: relative;
+}
+.header li::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  display: block;
+  width: 0%;
+  opacity: 50%;
+  height: 1px;
+  background: #000;
+  transition: 0.2s ease-in-out;
+}
+.header li:hover::before {
+  width: 100%;
 }
 .main {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin: 0 50px 50px 50px;
 }
 .col {
   display: grid;
