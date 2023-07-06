@@ -34,25 +34,25 @@
   position: absolute;
 }
 .aside .new-in::before {
-  background-image: url("/img/flash.svg");
+  background-image: url("../img/flash.svg");
 }
 .aside .cloth::before {
-  background-image: url("/img/clothing.svg");
+  background-image: url("../img/clothing.svg");
 }
 .aside .shoes::before {
-  background-image: url("/img/shoes.svg");
+  background-image: url("../img/shoes.svg");
 }
 .aside .acc::before {
-  background-image: url("/img/bag.svg");
+  background-image: url("../img/bag.svg");
 }
 .aside .active::before {
-  background-image: url("/img/activewear.svg");
+  background-image: url("../img/activewear.svg");
 }
 .aside .gifts::before {
-  background-image: url("/img/gift.svg");
+  background-image: url("../img/gift.svg");
 }
 .aside .inspiration::before {
-  background-image: url("/img/diamond.svg");
+  background-image: url("../img/diamond.svg");
 }
 .aside li {
   position: relative;
