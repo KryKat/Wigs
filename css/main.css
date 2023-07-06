@@ -1,0 +1,121 @@
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "aside header"
+    "aside main";
+  grid-template-columns: 252px 1fr;
+  grid-template-rows: auto 1fr;
+}
+.aside {
+  grid-area: aside;
+  background: #fff;
+  padding: 51px 55px;
+}
+.aside ul {
+  display: grid;
+  gap: 30px;
+}
+.aside li {
+  padding-left: 35px;
+  position: relative;
+}
+.aside li::before {
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  position: absolute;
+}
+.aside .new-in::before {
+  background-image: url("/img/flash.svg");
+}
+.aside .cloth::before {
+  background-image: url("/img/clothing.svg");
+}
+.aside .shoes::before {
+  background-image: url("/img/shoes.svg");
+}
+.aside .acc::before {
+  background-image: url("/img/bag.svg");
+}
+.aside .active::before {
+  background-image: url("/img/activewear.svg");
+}
+.aside .gifts::before {
+  background-image: url("/img/gift.svg");
+}
+.aside .inspiration::before {
+  background-image: url("/img/diamond.svg");
+}
+.aside nav a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 15.71px;
+  line-height: normal;
+  color: #000;
+}
+.explore {
+  margin-top: 57px;
+  margin-bottom: 54px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: normal;
+  color: #000;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-end;
+}
+.header nav ul {
+  display: flex;
+  align-items: center;
+  padding: 46px 0 76px;
+}
+.header li {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 42px;
+}
+.cart {
+  margin-left: 11px;
+}
+.user {
+  margin-left: 25px;
+}
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.col {
+  display: grid;
+  align-content: space-around;
+}
+.col2 {
+  display: flex;
+  justify-content: space-around;
+}
+.col3 {
+  display: flex;
+  justify-content: space-around;
+}
+.col4 {
+  display: grid;
+  align-content: space-around;
+}
+.main img {
+  max-width: 539px;
+}
+ul {
+  display: flex;
+}
